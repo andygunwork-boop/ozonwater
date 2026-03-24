@@ -1,4 +1,4 @@
-# 📄 PRD: Landingozonwater.kz
+# 📄 PRD: Landing ozonwater.kz
 > **Status:** `In Progress` | **Author:** @nick | **Priority:** `P0` | **Version:** 1.0 | **Last Updated:** 18.10.2024
 
 ---
@@ -59,4 +59,3 @@
 2. **Phase 2 (P1):** Наполнение реальным каталогом (после прохождения всех проверок).
 
 ---
-test
