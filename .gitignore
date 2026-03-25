@@ -1,1 +1,8 @@
 docs/
+.env
+.venv
+node_modules/
+.astro/
+dist/
+npm-debug.log*
+.DS_Store
