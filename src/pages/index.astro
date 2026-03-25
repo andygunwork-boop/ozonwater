@@ -152,30 +152,17 @@ import Layout from "../layouts/Layout.astro";
                         >
                             WS-R10
                         </h3>
-                        <div
-                            style="width: 150px; height: 260px; background: white; border-radius: 20px; box-shadow: var(--shadow-lg); border: 2px solid var(--color-border); position: relative; overflow: hidden;"
-                        >
+                        <div style>
                             <div
-                                style="position: absolute; bottom: 0; width: 100%; height: 60%; background: linear-gradient(to top, var(--color-primary-light), transparent); opacity: 0.1;"
+                                style="position: absolute; bottom: 0; width: 0%; height: 60%; background: linear-gradient(to top, var(--color-primary-light), transparent); opacity: 0.1;"
                             >
                             </div>
 
-                            <div
-                                style="display: flex; gap: 10px; padding: 20px; justify-content: center;"
-                            >
-                                <div
-                                    style="width: 25px; height: 160px; background: #e2e8f0; border-radius: 10px;"
-                                >
-                                </div>
-                                <div
-                                    style="width: 25px; height: 160px; background: #cbd5e1; border-radius: 10px;"
-                                >
-                                </div>
-                                <div
-                                    style="width: 25px; height: 160px; background: var(--color-primary-light); border-radius: 10px;"
-                                >
-                                </div>
-                            </div>
+                            <img
+                                src="/public/ozonwater-bg2.png"
+                                alt="WS-R10"
+                                style="display: block; width: 220px; height: 240px; object-fit: cover; margin: 10px auto 0;"
+                            />
                         </div>
                     </div>
                 </div>
@@ -228,54 +215,6 @@ import Layout from "../layouts/Layout.astro";
                             </div>
                         </li>
                     </ul>
-                </div>
-            </div>
-
-            <h3
-                style="text-align: center; font-size: 2rem; margin-bottom: 2rem;"
-            >
-                Почувствуйте разницу
-            </h3>
-            <div style="margin: 0 auto; max-width: 800px; text-align: center;">
-                <p style="color: var(--color-text-light); margin-bottom: 2rem;">
-                    Наведите курсор, чтобы увидеть результат преображения.
-                </p>
-                <div
-                    class="water-compare glass-card"
-                    style="position: relative; width: 100%; height: 200px; margin: 0 auto; overflow: hidden; padding: 0;"
-                >
-                    <div
-                        style="position: absolute; inset: 0; background: #8B7355; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.5rem; opacity: 0.8;"
-                    >
-                        Водопроводная вода
-                    </div>
-
-                    <div
-                        class="clean-water"
-                        style="position: absolute; top: 0; left: 0; width: 50%; height: 100%; overflow: hidden; border-right: 4px solid white; transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1); background: var(--color-primary);"
-                    >
-                        <!-- Fix text overflow with exact width equal to container max so it doesnt break while moving -->
-                        <div
-                            style="width: 800px; max-width: 100vw; height: 100%; display: flex; align-items: center; padding-left: 20px; justify-content: flex-start; color: white; font-weight: bold; font-size: 1.5rem;"
-                        >
-                            Чистая питьевая вода
-                        </div>
-                    </div>
-
-                    <div
-                        class="compare-handle"
-                        style="position: absolute; top: 50%; left: 50%; width: 40px; height: 40px; background: white; border-radius: 50%; transform: translate(-50%, -50%); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 20px rgba(0,0,0,0.5); pointer-events: none; transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1); color: var(--color-text);"
-                    >
-                        <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            ><path d="M8 9l-4 4 4 4m8-8l4 4-4 4"></path></svg
-                        >
-                    </div>
                 </div>
             </div>
         </div>
