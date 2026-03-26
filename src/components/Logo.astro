@@ -1,0 +1,42 @@
+---
+interface Props {
+	size?: number;
+	className?: string;
+}
+
+const { size = 40, className = "" } = Astro.props;
+---
+
+<svg
+	width={size}
+	height={size}
+	viewBox="0 0 100 100"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+	class={className}
+>
+	<!-- Water Drop -->
+	<path
+		d="M50 5C50 5 20 45 20 65C20 81.5685 33.4315 95 50 95C66.5685 95 80 81.5685 80 65C80 45 50 5 50 5Z"
+		fill="url(#paint0_linear)"
+	/>
+	
+	<!-- O3 Bubbles (Oxygen) -->
+	<circle cx="50" cy="55" r="8" fill="white" fill-opacity="0.6" />
+	<circle cx="40" cy="70" r="6" fill="white" fill-opacity="0.4" />
+	<circle cx="60" cy="73" r="5" fill="white" fill-opacity="0.3" />
+
+	<defs>
+		<linearGradient
+			id="paint0_linear"
+			x1="50"
+			y1="5"
+			x2="50"
+			y2="95"
+			gradientUnits="userSpaceOnUse"
+		>
+			<stop stop-color="#34d399" />
+			<stop offset="1" stop-color="#0ea5e9" />
+		</linearGradient>
+	</defs>
+</svg>
