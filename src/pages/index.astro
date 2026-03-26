@@ -20,34 +20,34 @@ import Layout from "../layouts/Layout.astro";
         >
         </div>
 
-        <div class="container animate-fade-up hero-content">
+        <div class="container animate-fade-up hero-content" style="text-align: center;">
             <div class="hero-text">
                 <h1
-                    style="font-size: 4rem; font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -2px;"
+                    style="font-size: 5rem; font-weight: 900; line-height: 1; margin-bottom: 2rem; letter-spacing: -3px; text-shadow: 0 10px 30px rgba(0,0,0,0.3);"
                 >
                     Чистая вода<br />для всей <span style="color: #A7F3D0;"
                         >семьи</span
                     >
                 </h1>
                 <p
-                    style="font-size: 1.25rem; font-weight: 300; opacity: 0.9; margin-bottom: 2.5rem; line-height: 1.5;"
+                    style="font-size: 1.5rem; font-weight: 300; opacity: 0.95; margin-bottom: 3rem; line-height: 1.4; max-width: 700px; margin-left: auto; margin-right: auto;"
                 >
                     Система обратного осмоса OzonWater R0 WS-R10. Устраняет
                     бактерии, хлор и посторонние запахи, делая питьевую воду
                     идеальной.
                 </p>
 
-                <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
                     <a
                         href="#product"
                         class="btn-primary"
-                        style="background: white; color: var(--color-primary);"
+                        style="background: white; color: var(--color-primary); padding: 1.25rem 2.5rem; font-size: 1.1rem;"
                         >Подробнее о системе</a
                     >
                     <a
                         href="#contacts"
                         class="btn-outline"
-                        style="border-color: white; color: white;">Заказать</a
+                        style="border-color: white; color: white; padding: 1.25rem 2.5rem; font-size: 1.1rem;">Заказать</a
                     >
                 </div>
             </div>
@@ -317,48 +317,70 @@ import Layout from "../layouts/Layout.astro";
     .hero-content {
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        justify-content: center;
         align-items: center;
         width: 100%;
-        padding-top: 4rem;
-        padding-bottom: 4rem;
+        min-height: 80vh;
+        z-index: 10;
+        text-align: center;
+        padding: 6rem 1rem;
     }
     .hero-text {
-        flex: 1;
-        max-width: 600px;
-        text-align: left;
+        max-width: 900px;
+        position: relative;
+        z-index: 20;
     }
     .hero-images {
-        flex: 1;
-        position: relative;
+        position: absolute;
+        inset: 0;
         width: 100%;
-        min-height: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        height: 100%;
+        z-index: 1;
+        overflow: hidden;
+        pointer-events: none;
     }
     .img-back {
         position: absolute;
-        width: 95%;
-        max-width: 650px;
-        border-radius: 24px;
-        transform: translate(20px, -30px);
+        width: 120%;
+        max-width: 1200px;
+        right: -10%;
+        top: 10%;
+        opacity: 0.15;
+        filter: blur(10px) brightness(1.2);
+        transform: rotate(-10deg);
         z-index: 1;
     }
     .img-front {
         position: absolute;
-        width: 85%;
-        max-width: 550px;
-        border-radius: 24px;
-        transform: translate(-80px, 100px);
+        width: 100%;
+        max-width: 1000px;
+        max-height: 90%;
+        height: auto;
+        object-fit: contain;
+        object-position: bottom center;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        opacity: 0.3;
         z-index: 2;
     }
-    @media (min-width: 768px) {
-        .hero-content {
-            flex-direction: row;
+    @media (min-width: 1024px) {
+        .img-back {
+            width: 80%;
+            right: -5%;
+            top: 50%;
+            transform: translateY(-50%) rotate(-5deg);
+            opacity: 0.25;
+            filter: blur(5px) brightness(1.1);
         }
-        .hero-images {
-            min-height: 650px;
+        .img-front {
+            width: 70%;
+            max-width: 900px;
+            bottom: 0;
+            opacity: 0.4;
+        }
+        .hero-content {
+            min-height: 100vh;
         }
     }
 
